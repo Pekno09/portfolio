@@ -1,1 +1,1 @@
-github page : https://github.com/Pekno09/portfolio.git
+github page : https://pekno09.github.io/portfolio/

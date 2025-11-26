@@ -5,15 +5,12 @@ body {
     line-height: 1.6;
     padding: 20px;
 }
-
-/* --- NAVIGATION --- */
 nav {
     background: rgb(51, 82, 64);
     padding: 10px;
     margin-bottom: 30px;
     border-radius: 5px;
 }
-
 nav ul {
     display: flex;
     justify-content: center;
@@ -22,7 +19,6 @@ nav ul {
     padding: 0;
     margin: 0;
 }
-
 nav a {
     color: white;
     text-decoration: none;
@@ -33,17 +29,15 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* --- TITRES --- */
+
 h1, h2, h3 {
     color:rgb(51, 82, 64); 
 }
 
-/* --- SECTIONS --- */
+
 section {
     margin-bottom: 40px;
 }
-
-/* --- PARAGRAPHES --- */
 p {
     text-align: justify;
 }

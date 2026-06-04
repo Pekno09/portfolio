@@ -1,1 +1,1 @@
-github page : https://pekno09.github.io/portfolio/exp.html
+github page : https://pekno09.github.io/portfolio/

@@ -1,138 +1,51 @@
-/* ------------------------------
-   PALETTE (kaki sobre et pro)
---------------------------------*/
-:root {
-    --kaki-fonce: #3f4a2a;
-    --kaki: #5b6b3a;
-    --kaki-clair: #8a9a5b;
-    --fond: #f4f4ee;
-    --texte: #2f3328;
-    --bordure: #dcdfd0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
+:root{--kaki-900:#272c1c;--kaki-800:#3f4a2c;--kaki-700:#5a6a3a;--kaki-500:#6b7348;--sauge-200:#cfd3b8;--sauge-100:#e6e9d8;--fond:#f2f3ec;--texte:#262b1b}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:"IBM Plex Sans",system-ui,sans-serif;background:var(--fond);color:var(--texte);line-height:1.65;display:grid;grid-template-columns:300px 1fr;min-height:100vh}
+h1,h2,h3,h4{font-family:"Bricolage Grotesque",system-ui,sans-serif;color:var(--kaki-800);line-height:1.2}
+a:focus-visible{outline:3px solid var(--kaki-500);outline-offset:3px}
 
-/* ------------------------------
-   RESET BASIQUE
---------------------------------*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+aside{background:var(--kaki-900);color:var(--sauge-100);padding:3rem 1.75rem;position:sticky;top:0;height:100vh;display:flex;flex-direction:column;gap:1.5rem}
+aside .nom{font-family:"Bricolage Grotesque",sans-serif;font-size:2rem;font-weight:700;color:#fff;line-height:1.1}
+aside .role{color:var(--sauge-200);margin-top:.4rem}
+aside nav{display:flex;flex-direction:column;gap:.25rem;margin-top:1rem}
+aside nav a{color:var(--sauge-100);text-decoration:none;padding:.5rem .75rem;border-left:3px solid transparent}
+aside nav a:hover{background:rgba(255,255,255,.07);border-left-color:var(--kaki-500)}
+aside nav a[aria-current="page"]{background:rgba(255,255,255,.12);border-left-color:#aab37a;color:#fff;font-weight:600}
+aside .liens{margin-top:auto;font-size:.95rem}
+aside .liens a{color:var(--sauge-200)}
 
-/* ------------------------------
-   STYLES GÉNÉRAUX
---------------------------------*/
-body {
-    font-family: "Segoe UI", Arial, sans-serif;
-    background: var(--fond);
-    color: var(--texte);
-    line-height: 1.7;
-    padding: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
+main{padding:3.5rem 3.5rem 5rem;max-width:68rem;width:100%}
+main>h1{font-size:2.1rem;padding-bottom:.6rem;border-bottom:3px solid var(--kaki-700);margin-bottom:2rem}
+.carte{background:#fff;border-left:6px solid var(--kaki-700);border-radius:6px;box-shadow:0 1px 4px rgba(0,0,0,.08);padding:1.5rem 1.75rem;margin-bottom:1.5rem}
+.carte h2{font-size:1.3rem;margin-bottom:.75rem}
+.carte p+p,.carte p+ul,.carte ul{margin-top:.6rem}
+.carte ul{padding-left:1.25rem}
+.todo{background:#fff8d6;border:1px dashed #b49b2a;padding:.05rem .4rem;border-radius:3px}
+.info{display:grid;grid-template-columns:max-content 1fr;gap:.3rem 1.25rem}
+.info dt{font-weight:600;color:var(--kaki-800)}
+.info dd{margin:0}
+.defile{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.93rem}
+th,td{border:1px solid #bfc4a6;padding:.5rem .7rem;text-align:left;vertical-align:top}
+thead th{background:var(--kaki-800);color:#fff}
+thead small{font-weight:400}
+.journal{min-width:36rem}
+.synthese{min-width:56rem;background:#fff}
+.synthese td{height:2.4rem}
+.synthese .comp{width:44%;font-size:.88rem}
+.synthese .comp h4{font-size:.98rem;margin:.9rem 0 .25rem;color:var(--kaki-800)}
+.synthese .comp h4:first-child{margin-top:0}
+.synthese .comp ul{padding-left:1.1rem;color:#454b36}
+.synthese .bande{background:var(--sauge-100);font-weight:600;color:var(--kaki-800)}
+.synthese td:last-child{width:15%}
 
-/* ------------------------------
-   NAVIGATION
---------------------------------*/
-nav {
-    background: var(--kaki-fonce);
-    padding: 15px 20px;
-    margin-bottom: 25px;
-    border-radius: 6px;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 25px;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-}
-
-nav ul li {
-    margin-left: 0;
-}
-
-nav ul li a {
-    color: #f4f4ee;
-    text-decoration: none;
-    font-weight: 600;
-    padding-bottom: 3px;
-    border-bottom: 2px solid transparent;
-}
-
-nav ul li a:hover {
-    border-bottom-color: var(--kaki-clair);
-}
-
-/* ------------------------------
-   TITRES
---------------------------------*/
-h1, h2, h3 {
-    color: var(--kaki-fonce);
-    margin-bottom: 15px;
-    margin-top: 20px;
-}
-
-h1 {
-    font-size: 2rem;
-    padding-bottom: 10px;
-    border-bottom: 3px solid var(--kaki);
-}
-
-h2 {
-    font-size: 1.4rem;
-}
-
-h3 {
-    font-size: 1.1rem;
-    color: var(--kaki);
-}
-
-/* ------------------------------
-   SECTIONS
---------------------------------*/
-section {
-    background: #ffffff;
-    padding: 22px 25px;
-    border-radius: 6px;
-    border-left: 4px solid var(--kaki);
-    margin-bottom: 25px;
-    box-shadow: 0 1px 6px rgba(63, 74, 42, 0.12);
-}
-
-section h2:first-child {
-    margin-top: 0;
-}
-
-/* ------------------------------
-   LISTES
---------------------------------*/
-ul, li {
-    margin-left: 20px;
-}
-
-/* ------------------------------
-   LIENS / BOUTONS
---------------------------------*/
-a {
-    color: var(--kaki);
-}
-
-button {
-    background-color: var(--kaki) !important;
-}
-
-button:hover {
-    background-color: var(--kaki-fonce) !important;
-}
-
-/* ------------------------------
-   TABLEAUX / IMAGES
---------------------------------*/
-img {
-    max-width: 100%;
-    display: block;
-    margin: auto;
+@media (max-width:860px){
+  body{grid-template-columns:1fr}
+  aside{position:static;height:auto;padding:1.5rem}
+  aside nav{flex-direction:row;flex-wrap:wrap;margin-top:0}
+  aside .liens{margin-top:0}
+  main{padding:2rem 1.25rem 4rem}
+  main>h1{font-size:1.6rem}
 }

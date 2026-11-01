@@ -2,76 +2,136 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Nom de la page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Épreuve E5 - Portfolio</title>
     <link rel="stylesheet" href="couleur.css">
 </head>
+<body>
 
+<aside>
+    <div>
+        <p class="nom">Aymane Aber</p>
+        <p class="role">Étudiant en BTS SIO, option SISR<br>Paris</p>
+    </div>
+
+    <nav aria-label="Navigation principale">
+        <a href="index.html">Présentation</a>
+        <a href="cms.html">CMS</a>
+        <a href="veille.html">Veille technologique</a>
+        <a href="e5.html" aria-current="page">Épreuve E5</a>
+        <a href="exp.html">Expérience</a>
+    </nav>
+
+    <p class="liens"><a href="https://github.com/Pekno09">GitHub</a></p>
+</aside>
+
+<main>
+    <h1>Épreuve orale E5 – Parcours de professionnalisation</h1>
+
+    <section class="carte">
+        <h2>1. Présentation de l’épreuve</h2>
+        <p>
+            L’épreuve orale E5 du BTS SIO a pour objectif d’évaluer la manière dont l’étudiant a construit son
+            parcours de professionnalisation à partir de ses expériences : stages, projets réalisés en formation,
+            missions en entreprise, etc.
+        </p>
+        <p>L’épreuve porte sur un domaine différent selon l’option choisie :</p>
+        <ul>
+            <li><b>SLAM :</b> conception et développement d’applications.</li>
+            <li><b>SISR :</b> administration des systèmes et des réseaux.</li>
+        </ul>
+        <p>
+            Pendant l’épreuve, le candidat doit présenter et analyser plusieurs situations professionnelles
+            qu’il a vécues, montrer les compétences qu’il a mobilisées et expliquer comment ces expériences
+            l’ont aidé à progresser.
+        </p>
+        <p>La durée totale est d’environ <b>40 minutes</b>, après une phase de préparation :</p>
+        <ul>
+            <li><b>Présentation orale (~10 minutes) :</b> le candidat présente son parcours, ses projets
+                et la façon dont il a construit ses compétences.</li>
+            <li><b>Échange avec le jury (~30 minutes) :</b> le jury pose des questions sur les choix
+                techniques, l’organisation du travail, la sécurité, la communication et la compréhension
+                globale des projets.</li>
+        </ul>
+    </section>
+
+    <section class="carte">
+        <h2>2. Compétences évaluées lors de l’épreuve</h2>
+        <p>
+            L’épreuve E5 permet au jury de vérifier plusieurs compétences importantes pour un futur
+            technicien en informatique. Parmi elles :
+        </p>
+        <ul>
+            <li>Analyser les besoins d’un client et reformuler les objectifs d’un projet.</li>
+            <li>Choisir des solutions techniques adaptées (logiciels, matériels, outils de développement).</li>
+            <li>Mettre en place ou développer une solution informatique (application, service réseau…).</li>
+            <li>Prendre en compte la sécurité des données et des systèmes.</li>
+            <li>Organiser son travail, planifier les tâches et respecter les délais.</li>
+            <li>Collaborer avec d’autres personnes (équipe projet, tuteur, utilisateurs).</li>
+            <li>Communiquer clairement à l’oral et à l’écrit sur un projet technique.</li>
+            <li>Prendre du recul sur ses expériences et être capable d’auto-évaluation.</li>
+        </ul>
+    </section>
+
+    <section class="carte">
+        <h2>3. Tableau de synthèse des réalisations professionnelles</h2>
+        <p class="note">Option SISR – les réalisations sont classées par contexte, avec les compétences du référentiel mobilisées.</p>
+
+        <div class="defile">
+            <table class="synthese">
+                <thead>
+                    <tr>
+                        <th>Réalisation professionnelle</th>
+                        <th>Période</th>
+                        <th>Compétences mises en œuvre</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bande"><td colspan="3">Réalisations en milieu professionnel – 1<sup>re</sup> année</td></tr>
+                    <tr>
+                        <td>
+                            <b>Stage Zenconnect – support réseau</b><br>
+                            Documents associés : <a href="ZENRAPPORT.pdf" target="_blank" rel="noopener">rapport de stage</a>
+                        </td>
+                        <td>06/05/26 au 09/06/26</td>
+                        <td>
+                            <ul>
+                                <li><b>Répondre aux incidents et aux demandes :</b> collecter, suivre et orienter des demandes (Zendesk, escalade N2) ; traiter des demandes concernant les services réseau (diagnostic, test de câblage, cycle de port).</li>
+                                <li><b>Gérer le patrimoine informatique :</b> recenser et identifier des équipements (adresse IP/MAC, Cisco Meraki, Samsara) ; mettre en place des niveaux d’habilitation (droits par profil sur Samsara).</li>
+                                <li><b>Organiser son développement professionnel :</b> utiliser des outils professionnels, respecter procédures et SLA.</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr class="bande"><td colspan="3">Réalisations en cours de formation</td></tr>
+                    <tr>
+                        <td>
+                            <b>Installation de Proxmox sur serveur Dell PowerEdge R630</b><br>
+                            Documents associés : <span class="todo">à compléter</span>
+                        </td>
+                        <td><span class="todo">JJ/MM/AA au JJ/MM/AA</span></td>
+                        <td><span class="todo">à compléter (déployer un service, travailler en mode projet, gérer des sauvegardes…)</span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Plateforme d’export de marchandises par conteneurs maritimes</b><br>
+                            Documents associés : <span class="todo">à compléter</span>
+                        </td>
+                        <td><span class="todo">JJ/MM/AA au JJ/MM/AA</span></td>
+                        <td><span class="todo">à compléter</span></td>
+                    </tr>
+
+                    <tr class="bande"><td colspan="3">Réalisations en milieu professionnel – 2<sup>e</sup> année</td></tr>
+                    <tr>
+                        <td><span class="todo">à compléter</span></td>
+                        <td><span class="todo">JJ/MM/AA au JJ/MM/AA</span></td>
+                        <td><span class="todo">à compléter</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
+
+</body>
 </html>
-
-
-
-
-<nav>
-    <ul>
-        <li><a href="index.html">Présentation</a></li>
-        <li><a href="cms.html">CMS</a></li>
-        <li><a href="veille.html">Veille Technologique</a></li>
-        <li><a href="e5.html">Épreuve E5</a></li>
-        <li><a href="exp.html">Éxperience</a></li>
-    </ul>
-</nav>
-
-<h1>Épreuve orale E5 – Parcours de professionnalisation</h1>
-
-<section>
-    <h2>1. Présentation de l’épreuve</h2>
-    <p>
-        L’épreuve orale E5 du BTS SIO a pour objectif d’évaluer la manière dont l’étudiant a construit son
-        parcours de professionnalisation à partir de ses expériences : stages, projets réalisés en formation,
-        missions en entreprise, etc.
-    </p>
-    <p>
-        L’épreuve porte sur un domaine différent selon l’option choisie :
-        <br><b>• SLAM :</b> conception et développement d’applications.<br>
-        <b>• SISR :</b> administration des systèmes et des réseaux.
-    </p>
-    <p>
-        Pendant l’épreuve, le candidat doit présenter et analyser plusieurs situations professionnelles
-        qu’il a vécues, montrer les compétences qu’il a mobilisées et expliquer comment ces expériences
-        l’ont aidé à progresser.
-    </p>
-    <p>
-        La durée totale est d’environ <b>40 minutes</b>, après une phase de préparation :
-    </p>
-    <ul>
-        <li><b>Présentation orale (~10 minutes) :</b> le candidat présente son parcours, ses projets
-            et la façon dont il a construit ses compétences.</li>
-        <li><b>Échange avec le jury (~30 minutes) :</b> le jury pose des questions sur les choix
-            techniques, l’organisation du travail, la sécurité, la communication et la compréhension
-            globale des projets.</li>
-    </ul>
-</section>
-
-<section>
-    <h2>2. Compétences évaluées lors de l’épreuve</h2>
-    <p>
-        L’épreuve E5 permet au jury de vérifier plusieurs compétences importantes pour un futur
-        technicien en informatique. Parmi elles :
-    </p>
-    <ul>
-        <li>Analyser les besoins d’un client et reformuler les objectifs d’un projet.</li>
-        <li>Choisir des solutions techniques adaptées (logiciels, matériels, outils de développement).</li>
-        <li>Mettre en place ou développer une solution informatique (application, service réseau…).</li>
-        <li>Prendre en compte la sécurité des données et des systèmes.</li>
-        <li>Organiser son travail, planifier les tâches et respecter les délais.</li>
-        <li>Collaborer avec d’autres personnes (équipe projet, tuteur, utilisateurs).</li>
-        <li>Communiquer clairement à l’oral et à l’écrit sur un projet technique.</li>
-        <li>Prendre du recul sur ses expériences et être capable d’auto-évaluation.</li>
-    </ul>
-</section>
-
-<section>
-    <h2>3. Tableau de synthèse des compétences</h2><br><BR></BR><BR></BR>
-    <img src="Tableau.png" alt="Tableau de compétences E5" style="width: 70%; display: block; margin: auto;">
-
-       

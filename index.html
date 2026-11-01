@@ -1,142 +1,87 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Aymane Aber – Portfolio BTS SIO SISR</title>
-<meta name="description" content="Portfolio d’Aymane Aber, étudiant en BTS SIO option SISR : réseaux, systèmes, virtualisation et cybersécurité.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
-<style>
-:root{
-  --kaki-900:#272c1c; --kaki-700:#4a5232; --kaki-500:#6b7348;
-  --sauge-200:#cfd3b8; --sauge-100:#e6e8d8; --sauge-50:#f1f2e8;
-  --texte:#252a1a; --lien:#4a5232;
-}
-*{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth}
-body{font-family:"IBM Plex Sans",system-ui,sans-serif;background:var(--sauge-50);color:var(--texte);line-height:1.65;display:grid;grid-template-columns:320px 1fr;min-height:100vh}
-h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.15}
-a{color:var(--lien)}
-a:focus-visible,button:focus-visible{outline:3px solid var(--kaki-500);outline-offset:3px}
-
-aside{background:var(--kaki-900);color:var(--sauge-100);padding:3rem 2rem;position:sticky;top:0;height:100vh;display:flex;flex-direction:column;gap:1.5rem}
-aside h1{font-size:2.1rem;color:#fff}
-aside .role{color:var(--sauge-200)}
-aside nav{display:flex;flex-direction:column;gap:.25rem;margin-top:1rem}
-aside nav a{color:var(--sauge-100);text-decoration:none;padding:.45rem .75rem;border-left:3px solid transparent}
-aside nav a:hover{border-left-color:var(--kaki-500);background:rgba(255,255,255,.06)}
-aside .liens{margin-top:auto;display:flex;flex-direction:column;gap:.4rem;font-size:.95rem}
-aside .liens a{color:var(--sauge-200)}
-
-main{padding:4rem 4rem 5rem;max-width:62rem}
-section{padding:2.5rem 0;border-top:2px solid var(--sauge-200)}
-section:first-child{border-top:0;padding-top:0}
-h2{font-size:1.9rem;color:var(--kaki-700);margin-bottom:1.25rem}
-.intro{font-size:1.25rem;max-width:42rem}
-.intro strong{font-weight:500}
-
-.competences{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:1.5rem}
-.competences div{border-left:4px solid var(--kaki-500);padding-left:1rem}
-.competences h3{font-size:1.1rem;margin-bottom:.35rem}
-.competences p{font-size:.95rem}
-
-.projet{background:var(--sauge-100);border-left:6px solid var(--kaki-700);padding:1.5rem 1.75rem;margin-bottom:1.25rem}
-.projet h3{font-size:1.3rem;margin-bottom:.25rem}
-.projet .meta{color:var(--kaki-500);font-size:.9rem;margin-bottom:.75rem}
-.projet ul{padding-left:1.1rem}
-.projet li{margin:.2rem 0}
-
-.parcours{list-style:none;padding:0;border-left:3px solid var(--sauge-200)}
-.parcours li{padding:0 0 1.5rem 1.5rem;position:relative}
-.parcours li::before{content:"";position:absolute;left:-9px;top:.5rem;width:15px;height:15px;background:var(--kaki-500);border-radius:50%}
-.parcours .date{color:var(--kaki-500);font-size:.9rem}
-.parcours h3{font-size:1.1rem}
-
-.bouton{display:inline-block;background:var(--kaki-700);color:#fff;padding:.75rem 1.5rem;text-decoration:none;font-weight:500;margin-top:.75rem}
-.bouton:hover{background:var(--kaki-900)}
-
-@media (max-width:860px){
-  body{grid-template-columns:1fr}
-  aside{position:static;height:auto;padding:2rem 1.5rem}
-  aside nav{flex-direction:row;flex-wrap:wrap}
-  aside .liens{margin-top:0}
-  main{padding:2rem 1.5rem 4rem}
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aymane Aber – Portfolio BTS SIO SISR</title>
+    <meta name="description" content="Portfolio d’Aymane Aber, étudiant en BTS SIO option SISR : réseaux, systèmes, virtualisation et cybersécurité.">
+    <link rel="stylesheet" href="couleur.css">
 </head>
 <body>
+
 <aside>
-  <div>
-    <h1>Aymane Aber</h1>
-    <p class="role">Étudiant en BTS SIO, option SISR<br>Paris</p>
-  </div>
-  <nav aria-label="Navigation principale">
-    <a href="#apropos">À propos</a>
-    <a href="#competences">Compétences</a>
-    <a href="#projets">Projets</a>
-    <a href="#parcours">Parcours</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  <div class="liens">
-    <a href="https://github.com/Pekno09">GitHub</a>
-    <a href="mailto:ton.email@exemple.fr">ton.email@exemple.fr</a>
-  </div>
+    <div>
+        <p class="nom">Aymane Aber</p>
+        <p class="role">Étudiant en BTS SIO, option SISR<br>Paris</p>
+    </div>
+
+    <nav aria-label="Navigation principale">
+        <a href="index.html" aria-current="page">Présentation</a>
+        <a href="cms.html">CMS</a>
+        <a href="veille.html">Veille technologique</a>
+        <a href="e5.html">Épreuve E5</a>
+        <a href="exp.html">Expérience</a>
+    </nav>
+
+    <p class="liens"><a href="https://github.com/Pekno09">GitHub</a></p>
 </aside>
 
-<main>
-  <section id="apropos">
-    <h2>À propos</h2>
-    <p class="intro">Je suis en <strong>2<sup>e</sup> année de BTS SIO, option SISR</strong> (Solutions d’Infrastructure, Systèmes et Réseaux). Je construis et sécurise des infrastructures : réseaux, serveurs Linux et Windows, virtualisation. Je cherche une alternance ou un stage pour mettre ces compétences en pratique.</p>
-  </section>
+<main class="accueil">
+    <h1>Présentation</h1>
 
-  <section id="competences">
-    <h2>Compétences</h2>
-    <div class="competences">
-      <div><h3>Réseaux</h3><p>Adressage, routage, VLAN, services réseau.</p></div>
-      <div><h3>Systèmes</h3><p>Administration de Linux et de Windows Server.</p></div>
-      <div><h3>Virtualisation</h3><p>Déploiement et gestion de machines virtuelles avec Proxmox.</p></div>
-      <div><h3>Cybersécurité</h3><p>Bonnes pratiques de sécurisation des postes, serveurs et réseaux.</p></div>
-    </div>
-  </section>
+    <section id="apropos">
+        <h2>À propos</h2>
+        <p class="intro">Je suis en <strong>2<sup>e</sup> année de BTS SIO, option SISR</strong> (Solutions d’Infrastructure, Systèmes et Réseaux). Je construis et sécurise des infrastructures : réseaux, serveurs Linux et Windows, virtualisation. Je cherche une alternance ou un stage pour mettre ces compétences en pratique.</p>
+    </section>
 
-  <section id="projets">
-    <h2>Projets</h2>
-    <article class="projet">
-      <h3>Installation de Proxmox sur serveur Dell PowerEdge R630</h3>
-      <p class="meta">Projet de classe, groupe de 5, BTS SIO</p>
-      <ul>
-        <li>Installation physique du serveur en baie et préparation du matériel.</li>
-        <li>Installation et configuration de Proxmox VE.</li>
-        <li>Rédaction de la documentation technique remise au groupe.</li>
-      </ul>
-    </article>
-    <article class="projet">
-      <h3>Plateforme d’export de marchandises par conteneurs maritimes</h3>
-      <p class="meta">Projet de groupe sur 6 mois, 2<sup>e</sup> année de BTS SIO</p>
-      <ul>
-        <li>Plateforme de mise en relation entre exportateurs et transporteurs.</li>
-        <li>Mon rôle : à compléter (infrastructure, sécurité, déploiement).</li>
-      </ul>
-    </article>
-  </section>
+    <section id="competences">
+        <h2>Compétences</h2>
+        <div class="competences">
+            <div><h3>Réseaux</h3><p>Adressage, routage, VLAN, supervision réseau avec Cisco Meraki.</p></div>
+            <div><h3>Systèmes</h3><p>Administration de Linux et de Windows Server.</p></div>
+            <div><h3>Virtualisation</h3><p>Déploiement et gestion de machines virtuelles avec Proxmox.</p></div>
+            <div><h3>Support</h3><p>Traitement de tickets d’incidents avec Zendesk, diagnostic et escalade.</p></div>
+        </div>
+    </section>
 
-  <section id="parcours">
-    <h2>Parcours</h2>
-    <ul class="parcours">
-      <li><span class="date">Depuis septembre 2026</span><h3>BTS SIO option SISR, 2<sup>e</sup> année</h3><p>Réseaux, cybersécurité, administration système, virtualisation.</p></li>
-      <li><span class="date">2025 – 2026</span><h3>BTS SIO option SISR, 1<sup>re</sup> année</h3><p>Bases des réseaux, des systèmes et de la sécurité.</p></li>
-      <li><span class="date">2025</span><h3>Baccalauréat professionnel</h3></li>
-      <li><span class="date">Expériences</span><h3>Assistant en pharmacie · Employé en boulangerie le week-end</h3><p>Rigueur, relation client, travail en équipe.</p></li>
-    </ul>
-  </section>
+    <section id="projets">
+        <h2>Projets</h2>
+        <article class="projet">
+            <h3>Installation de Proxmox sur serveur Dell PowerEdge R630</h3>
+            <p class="meta">Projet de classe, groupe de 5, BTS SIO</p>
+            <ul>
+                <li>Installation physique du serveur en baie et préparation du matériel.</li>
+                <li>Installation et configuration de Proxmox VE.</li>
+                <li>Rédaction de la documentation technique remise au groupe.</li>
+            </ul>
+        </article>
+        <article class="projet">
+            <h3>Plateforme d’export de marchandises par conteneurs maritimes</h3>
+            <p class="meta">Projet de groupe sur 6 mois, 2<sup>e</sup> année de BTS SIO</p>
+            <ul>
+                <li>Plateforme de mise en relation entre exportateurs et transporteurs.</li>
+                <li>Mon rôle : <span class="todo">à compléter (infrastructure, sécurité, déploiement)</span></li>
+            </ul>
+        </article>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Une alternance, un stage ou une question sur mes projets ? Écrivez-moi.</p>
-    <a class="bouton" href="mailto:ton.email@exemple.fr">Envoyer un e-mail</a>
-  </section>
+    <section id="parcours">
+        <h2>Parcours</h2>
+        <ul class="parcours">
+            <li><span class="date">Depuis septembre 2026</span><h3>BTS SIO option SISR, 2<sup>e</sup> année</h3><p>Réseaux, cybersécurité, administration système, virtualisation.</p></li>
+            <li><span class="date">6 mai – 9 juin 2026</span><h3>Stage Technicien Support Réseau – Zenconnect</h3><p>Tickets d’incidents (Zendesk), supervision réseau (Cisco Meraki), supervision de flotte (Samsara). <a href="exp.html">Voir le détail</a>.</p></li>
+            <li><span class="date">2025 – 2026</span><h3>BTS SIO option SISR, 1<sup>re</sup> année</h3><p>Bases des réseaux, des systèmes et de la sécurité.</p></li>
+            <li><span class="date">2025</span><h3>Baccalauréat professionnel</h3></li>
+            <li><span class="date">Expériences</span><h3>Assistant en pharmacie · Employé en boulangerie le week-end</h3><p>Rigueur, relation client, travail en équipe.</p></li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Une alternance, un stage ou une question sur mes projets ? Écrivez-moi.</p>
+        <a class="bouton" href="mailto:aymaneaber7@icloud.com">Envoyer un e-mail</a>
+    </section>
 </main>
+
 </body>
 </html>

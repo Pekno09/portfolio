@@ -2,67 +2,208 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Expérience</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expérience - Portfolio</title>
     <link rel="stylesheet" href="couleur.css">
 </head>
 <body>
 
-<nav>
-    <ul>
-        <li><a href="index.html">Présentation</a></li>
-        <li><a href="cms.html">CMS</a></li>
-        <li><a href="veille.html">Veille Technologique</a></li>
-        <li><a href="e5.html">Épreuve E5</a></li>
-        <li><a href="exp.html">Éxperience</a></li>
-    </ul>
-</nav>
-
-<h1 style="color: rgb(57, 102, 150);">Expérience professionnelle</h1>
-
-<section>
-    <h2 style="color: rgb(57, 102, 150);">Stage – Zenconnect</h2>
-    <p><b>Société :</b> Zenconnect</p>
-    <p><b>Adresse :</b> 233 Rue Étienne Marcel, 93100 Montreuil</p>
-    <p><b>Année :</b> 2026</p>
-    <p><b>Durée :</b> 5 semaines — du 6 mai au 9 juin 2026</p>
-    <p><b>Poste :</b> Technicien Support Réseau</p>
-    <p><b>Maître de stage :</b> Thomas Hamdi</p>
-</section>
-
-<br>
-
-<section>
-    <h2 style="color: rgb(57, 102, 150);">Missions principales</h2>
-    <ul>
-        <li>Traitement des tickets d'incidents via Zendesk</li>
-        <li>Supervision des réseaux clients via Cisco Meraki</li>
-        <li>Tests de ping et de câblage sur les équipements</li>
-        <li>Extinction et redémarrage de ports de switch à distance</li>
-        <li>Appels clients via Ringover pour les incidents non résolus</li>
-        <li>Interventions terrain chez les clients</li>
-    </ul>
-</section>
-
-<br>
-
-<section>
-    <h2 style="color: rgb(57, 102, 150);">Rapport de stage</h2>
-    <p>Consultez mon rapport de stage complet en cliquant sur le bouton ci-dessous.</p>
-    <br>
-    <div style="text-align: center;">
-        <a href="ZENRAPPORT.pdf" target="_blank">
-            <button style="
-                background-color: rgb(57, 102, 150);
-                color: white;
-                padding: 12px 24px;
-                border: none;
-                border-radius: 6px;
-                font-size: 16px;
-                cursor: pointer;
-            ">📄 Voir mon rapport de stage</button>
-        </a>
+<aside>
+    <div>
+        <p class="nom">Aymane Aber</p>
+        <p class="role">Étudiant en BTS SIO, option SISR<br>Paris</p>
     </div>
-</section>
+
+    <nav aria-label="Navigation principale">
+        <a href="index.html">Présentation</a>
+        <a href="cms.html">CMS</a>
+        <a href="veille.html">Veille technologique</a>
+        <a href="e5.html">Épreuve E5</a>
+        <a href="exp.html" aria-current="page">Expérience</a>
+    </nav>
+
+    <p class="liens"><a href="https://github.com/Pekno09">GitHub</a></p>
+</aside>
+
+<main>
+    <h1>Expérience professionnelle</h1>
+
+    <section class="carte">
+        <h2>Stage – Zenconnect</h2>
+        <dl class="info">
+            <dt>Société</dt><dd>Zenconnect</dd>
+            <dt>Adresse</dt><dd>233 Rue Étienne Marcel, 93100 Montreuil</dd>
+            <dt>Durée</dt><dd>5 semaines, du 6 mai au 9 juin 2026</dd>
+            <dt>Poste</dt><dd>Technicien Support Réseau (pôle support)</dd>
+            <dt>Maître de stage</dt><dd>Thomas Hamdi</dd>
+            <dt>Formation</dt><dd>BTS SIO option SISR, 1<sup>re</sup> année</dd>
+        </dl>
+    </section>
+
+    <section class="carte">
+        <h2>L’entreprise</h2>
+        <p>
+            Zenconnect est une entreprise française spécialisée dans les technologies cloud, fondée en 2012 et située à Montreuil.
+            Intégrateur réseau 100 % cloud, elle accompagne ses clients dans la modernisation de leur infrastructure grâce à la
+            plateforme <b>Cisco Meraki</b>. Les équipements réseau des clients (routeurs, switches, bornes Wi-Fi) sont configurés et
+            supervisés depuis le cloud, ce qui permet d’intervenir rapidement à distance.
+        </p>
+        <h3>Outils du pôle support</h3>
+        <div class="defile">
+            <table class="journal">
+                <thead><tr><th>Outil</th><th>Rôle</th></tr></thead>
+                <tbody>
+                    <tr><td>Cisco Meraki</td><td>Supervision et administration réseau des clients à distance</td></tr>
+                    <tr><td>Zendesk</td><td>Réception, traitement et suivi des tickets d’incidents</td></tr>
+                    <tr><td>Ringover</td><td>Téléphonie VoIP : appels entrants et sortants clients</td></tr>
+                    <tr><td>Zenlink</td><td>Suivi des liens internet clients (statut, pannes, rebranchements)</td></tr>
+                    <tr><td>Synchroteam</td><td>Planification et suivi des interventions terrain</td></tr>
+                    <tr><td>Samsara</td><td>Supervision de flotte de véhicules et de caméras embarquées</td></tr>
+                    <tr><td>1Password</td><td>Gestionnaire de mots de passe sécurisé</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="carte">
+        <h2>Missions principales</h2>
+        <ul>
+            <li>Traitement des tickets d’incidents clients via Zendesk</li>
+            <li>Identification des équipements en panne via leur adresse IP ou MAC</li>
+            <li>Supervision des réseaux clients et diagnostic via Cisco Meraki</li>
+            <li>Tests de ping et de câblage sur les équipements réseau</li>
+            <li>Extinction et redémarrage de ports de switch à distance</li>
+            <li>Appels clients via Ringover pour les incidents non résolus à distance</li>
+            <li>Supervision de la plateforme Samsara (flotte de véhicules clients)</li>
+        </ul>
+        <h3>Organisation du support</h3>
+        <p>
+            Le pôle est organisé en deux niveaux : le <b>niveau 1</b> (premier contact client, incidents simples)
+            et le <b>niveau 2</b> (incidents complexes, escalades, diagnostics avancés).
+            Les engagements de service (SLA) dépendent du contrat du client : ZenHelp, ZenCare ou ZenDuty
+            (prise en charge en 1 h et résolution en 4 h pour les incidents critiques, 7j/7).
+        </p>
+    </section>
+
+    <section class="carte">
+        <h2>Traitement d’un ticket</h2>
+        <p>Les incidents arrivent dans Zendesk, automatiquement via les alertes Cisco Meraki ou manuellement après un appel ou un e-mail client.</p>
+        <div class="defile">
+            <table class="journal">
+                <thead><tr><th>Étape</th><th>Action réalisée</th><th>Outil</th></tr></thead>
+                <tbody>
+                    <tr><td>1</td><td>Lecture du ticket : client, site, IP, description</td><td>Zendesk</td></tr>
+                    <tr><td>2</td><td>Identification de l’équipement via son IP</td><td>Tableau IP interne</td></tr>
+                    <tr><td>3</td><td>Vérification de l’état de l’équipement</td><td>Cisco Meraki</td></tr>
+                    <tr><td>4</td><td>Diagnostic : ping, test de câblage, vérification des liens</td><td>Meraki / Terminal</td></tr>
+                    <tr><td>5</td><td>Action corrective : reset de port, redémarrage</td><td>Cisco Meraki</td></tr>
+                    <tr><td>6</td><td>Documentation et clôture du ticket</td><td>Zendesk</td></tr>
+                    <tr><td>7</td><td>Si non résolu : appel du client et escalade N2</td><td>Ringover</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="carte">
+        <h2>Supervision réseau avec Cisco Meraki</h2>
+        <p>Cisco Meraki est la plateforme cloud utilisée chaque jour pour superviser et administrer les réseaux des clients depuis un navigateur web.</p>
+        <ul>
+            <li>Vue globale : état de tous les équipements (vert = en ligne, rouge = hors ligne)</li>
+            <li>Identification des appareils connectés avec leur adresse IP et MAC</li>
+            <li>Localisation d’un équipement : sur quel switch et quel port il est branché</li>
+            <li>Test de câblage sur les ports de switch</li>
+            <li>Extinction et rallumage de ports à distance (<i>disable / enable</i>)</li>
+            <li>Redémarrage de switches, routeurs ou bornes Wi-Fi</li>
+            <li>Consultation des logs réseau, alertes et événements</li>
+        </ul>
+    </section>
+
+    <section class="carte">
+        <h2>Exemples de tickets traités</h2>
+
+        <h3>Ticket n° 59559 – équipement en mode urgence (client restauration, contrat ZenDuty)</h3>
+        <ul>
+            <li>Lecture du ticket : équipement en mode urgence, erreur d’affichage</li>
+            <li>Localisation sur Meraki : port 16 du switch S3 (MS125-24P)</li>
+            <li>Vérification du port : VLAN 12, mode Access, 1 Gbps, port actif</li>
+            <li>Test de câblage : résultat OK, câble non défectueux</li>
+            <li>Vidage du condensateur de l’équipement, puis cycle du port depuis Meraki</li>
+            <li>Vérification de la remise en ligne, documentation et clôture du ticket</li>
+        </ul>
+
+        <h3>Ticket n° 146172 – dysfonctionnement d’un TPE filaire (client restauration, contrat ZenDuty)</h3>
+        <ul>
+            <li>Lecture du ticket : switch MS225, port 32, équipement déconnecté depuis 20 h</li>
+            <li>Test de câblage : paire 3/4 NOK, câble défectueux détecté</li>
+            <li>Cycle du port 32 depuis Meraki, puis test de ping : 100 % de perte, équipement injoignable</li>
+            <li>Conclusion : problème matériel confirmé, alerte du client pour une intervention physique</li>
+            <li>Documentation complète dans Zendesk et clôture du ticket</li>
+        </ul>
+
+        <h3>Autres incidents courants</h3>
+        <div class="defile">
+            <table class="journal">
+                <thead><tr><th>Type d’incident</th><th>Description</th><th>Action principale</th></tr></thead>
+                <tbody>
+                    <tr><td>Site hors ligne</td><td>Routeur client injoignable</td><td>Redémarrage et contact du FAI</td></tr>
+                    <tr><td>Lien WAN en panne</td><td>Fibre ou 4G du client tombée</td><td>Redémarrage de la box et ticket FAI</td></tr>
+                    <tr><td>Équipement réseau HS</td><td>Switch ou borne Wi-Fi injoignable</td><td>Test de câblage et cycle de port</td></tr>
+                    <tr><td>Problème de téléphonie</td><td>Téléphones IP hors service</td><td>Diagnostic VPN, 3CX / Yealink</td></tr>
+                    <tr><td>Demande d’accès réseau</td><td>Ajout d’une règle firewall ou d’un VLAN</td><td>Configuration Meraki et validation</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="carte">
+        <h2>Samsara – supervision de flotte et caméras embarquées</h2>
+        <p>
+            En parallèle du support réseau, j’ai travaillé sur la plateforme Samsara, utilisée par certains clients pour gérer
+            leur flotte de véhicules. Chaque véhicule est équipé d’un boîtier télématique (prise OBD) et de caméras embarquées
+            qui remontent leurs données en temps réel vers le cloud : localisation GPS, trajets, détection d’événements
+            (freinage, virage brusque, distraction) et rapports automatiques.
+        </p>
+        <div class="defile">
+            <table class="journal">
+                <thead><tr><th>Tâche</th><th>Description</th></tr></thead>
+                <tbody>
+                    <tr><td>Vérification des caméras</td><td>Contrôle du fonctionnement suite à un ticket entrant</td></tr>
+                    <tr><td>Suivi de flotte</td><td>Consultation des positions et trajets en temps réel</td></tr>
+                    <tr><td>Gestion des alertes</td><td>Consultation et analyse des incidents comportementaux</td></tr>
+                    <tr><td>Gestion des accès</td><td>Attribution des droits par profil (par exemple lecture seule pour un chef de projet)</td></tr>
+                    <tr><td>Envoi d’un technicien</td><td>Si boîtier ou caméra défaillant : création d’un bon d’intervention dans Zendesk</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="carte">
+        <h2>Bilan du stage</h2>
+        <h3>Compétences techniques acquises</h3>
+        <ul>
+            <li>Utilisation de Cisco Meraki (supervision, administration réseau)</li>
+            <li>Traitement d’incidents réseau réels (diagnostic, résolution)</li>
+            <li>Gestion des tickets via Zendesk</li>
+            <li>Tests réseau : ping, test de câblage, vérification WAN</li>
+            <li>Manipulation à distance de switches (ports, redémarrages)</li>
+            <li>Supervision de flotte Samsara (caméras, alertes, accès utilisateurs)</li>
+        </ul>
+        <h3>Compétences professionnelles développées</h3>
+        <ul>
+            <li>Rigueur et réactivité face aux incidents urgents en environnement de production</li>
+            <li>Sens des priorités : repérer rapidement les tickets critiques</li>
+            <li>Communication professionnelle avec les clients, par téléphone et par écrit</li>
+            <li>Respect des procédures et des engagements contractuels (SLA)</li>
+            <li>Travail en équipe avec les techniciens N1 et N2</li>
+        </ul>
+    </section>
+
+    <section class="carte">
+        <h2>Rapport de stage</h2>
+        <p>Consultez mon rapport de stage complet.</p>
+        <p><a class="bouton" href="ZENRAPPORT.pdf" target="_blank" rel="noopener">📄 Voir mon rapport de stage</a></p>
+    </section>
+</main>
 
 </body>
 </html>

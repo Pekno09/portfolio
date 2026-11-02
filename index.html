@@ -29,12 +29,20 @@
 </aside>
 
 <main class="accueil">
-    <h1>Présentation</h1>
 
-    <section id="apropos">
-        <h2>À propos</h2>
-        <p class="intro">Je suis en <strong>2<sup>e</sup> année de BTS SIO, option SISR</strong> (Solutions d’Infrastructure, Systèmes et Réseaux). Je construis et sécurise des infrastructures : réseaux, serveurs Linux et Windows, virtualisation. Je cherche une alternance ou un stage pour mettre ces compétences en pratique.</p>
-    </section>
+    <div class="hero" id="apropos">
+        <span class="etiquette">BTS SIO option SISR · 2<sup>e</sup> année</span>
+        <h1>Je construis et sécurise des infrastructures réseaux et systèmes</h1>
+        <p>
+            Étudiant en BTS SIO option SISR (Solutions d’Infrastructure, Systèmes et Réseaux), je travaille sur les réseaux,
+            les serveurs Linux et Windows et la virtualisation. Je cherche une alternance ou un stage pour mettre
+            ces compétences en pratique.
+        </p>
+        <div class="actions">
+            <a class="bouton" href="exp.html">Voir mon expérience</a>
+            <a class="bouton second" href="#contact">Me contacter</a>
+        </div>
+    </div>
 
     <section id="competences">
         <h2>Compétences</h2>
@@ -48,23 +56,25 @@
 
     <section id="projets">
         <h2>Projets</h2>
-        <article class="projet">
-            <h3>Installation de Proxmox sur serveur Dell PowerEdge R630</h3>
-            <p class="meta">Projet de classe, groupe de 5, BTS SIO</p>
-            <ul>
-                <li>Installation physique du serveur en baie et préparation du matériel.</li>
-                <li>Installation et configuration de Proxmox VE.</li>
-                <li>Rédaction de la documentation technique remise au groupe.</li>
-            </ul>
-        </article>
-        <article class="projet">
-            <h3>Plateforme d’export de marchandises par conteneurs maritimes</h3>
-            <p class="meta">Projet de groupe sur 6 mois, 2<sup>e</sup> année de BTS SIO</p>
-            <ul>
-                <li>Plateforme de mise en relation entre exportateurs et transporteurs.</li>
-                <li>Mon rôle : <span class="todo">à compléter (infrastructure, sécurité, déploiement)</span></li>
-            </ul>
-        </article>
+        <div class="projets-grille">
+            <article class="projet">
+                <h3>Installation de Proxmox sur serveur Dell PowerEdge R630</h3>
+                <p class="meta">Projet de classe, groupe de 5, BTS SIO</p>
+                <ul>
+                    <li>Installation physique du serveur en baie et préparation du matériel.</li>
+                    <li>Installation et configuration de Proxmox VE.</li>
+                    <li>Rédaction de la documentation technique remise au groupe.</li>
+                </ul>
+            </article>
+            <article class="projet">
+                <h3>Plateforme d’export de marchandises par conteneurs maritimes</h3>
+                <p class="meta">Projet de groupe sur 6 mois, 2<sup>e</sup> année de BTS SIO</p>
+                <ul>
+                    <li>Plateforme de mise en relation entre exportateurs et transporteurs.</li>
+                    <li>Mon rôle : <span class="todo">à compléter (infrastructure, sécurité, déploiement)</span></li>
+                </ul>
+            </article>
+        </div>
     </section>
 
     <section id="parcours">
@@ -78,7 +88,7 @@
         </ul>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="contact-box">
         <h2>Contact</h2>
         <p>Une alternance, un stage ou une question sur mes projets ? Écrivez-moi.</p>
         <a class="bouton" href="mailto:aymaneaber7@icloud.com">Envoyer un e-mail</a>

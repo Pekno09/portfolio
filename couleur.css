@@ -94,6 +94,7 @@ thead small{font-weight:400}
   main>h1{font-size:1.6rem}
   .projets-grille{grid-template-columns:1fr}
 }
+
 /* Veille en diaporama */
 .diapo{background:#fff;border-radius:12px;border-top:6px solid var(--kaki-700);box-shadow:0 1px 6px rgba(0,0,0,.1);padding:2.25rem clamp(1.5rem,4vw,3.5rem);margin-bottom:1.5rem}
 .js .diapo{display:none;margin-bottom:0;min-height:58vh}
@@ -132,3 +133,23 @@ thead small{font-weight:400}
 #diapo-points button:hover{background:var(--kaki-500)}
 #diapo-points button[aria-current="true"]{background:var(--kaki-700)}
 #diapo-compteur{font-size:.9rem;color:#454b36}
+
+/* Tableau de synthèse E5 (modèle officiel) */
+.carte .info.entete{margin:.9rem 0 1.25rem}
+.matrice{min-width:72rem;background:#fff;font-size:.82rem}
+.matrice th,.matrice td{padding:.45rem .55rem}
+.matrice thead th{font-size:.82rem;text-align:center;vertical-align:middle}
+.matrice thead th.gauche{text-align:left}
+.matrice thead th small{font-size:.74rem}
+.matrice .ref td{background:var(--sauge-100);font-size:.72rem;font-weight:400;color:#454b36}
+.matrice .ref ul{padding-left:.9rem;margin:0}
+.matrice .ref li{margin:0 0 .25rem}
+.matrice .bande td{background:var(--kaki-700);color:#fff;font-weight:600;font-size:.9rem;padding:.55rem .75rem}
+.matrice td ul{list-style:none;padding:0;margin:0}
+.matrice td li{margin:0 0 .55rem}
+.matrice td li:last-child{margin-bottom:0}
+.matrice td li b{display:block;font-weight:600;color:var(--kaki-800);font-size:.8rem}
+.matrice .preuve{display:block;color:#454b36;font-size:.76rem}
+.matrice td a{color:var(--kaki-700)}
+.matrice .col-real{width:21%}
+.matrice .col-per{width:8%}

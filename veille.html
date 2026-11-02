@@ -16,13 +16,15 @@
 
     <nav aria-label="Navigation principale">
         <a href="index.html">Présentation</a>
-        <a href="cms.html">CMS</a>
         <a href="veille.html" aria-current="page">Veille technologique</a>
         <a href="e5.html">Épreuve E5</a>
         <a href="exp.html">Expérience</a>
     </nav>
 
-    <p class="liens"><a href="https://github.com/Pekno09">GitHub</a></p>
+    <p class="liens">
+        <a href="https://github.com/Pekno09">GitHub</a>
+        <a href="mailto:aymaneaber7@icloud.com">aymaneaber7@icloud.com</a>
+    </p>
 </aside>
 
 <main>
@@ -42,55 +44,165 @@
         <h2>2. Importance de la veille dans ma future activité professionnelle</h2>
         <p>
             Dans les métiers de l’informatique, les technologies évoluent très vite. La veille permet de maintenir ses
-            compétences à jour, de repérer les tendances (cloud, IA, DevOps, cybersécurité…), d’améliorer la qualité des
-            projets et d’anticiper les risques (failles, fins de support, changements de normes). Elle montre également une
+            compétences à jour, de repérer les tendances, d’améliorer la qualité des projets et d’anticiper les risques
+            (fins de support, hausses de prix du matériel, ruptures d’approvisionnement). Elle montre également une
             capacité à apprendre en autonomie et à proposer des solutions modernes.
         </p>
     </section>
 
     <section class="carte">
-        <h2>3. Méthodes pour réaliser une veille</h2>
-        <p>Voici les étapes de la démarche de veille :</p>
+        <h2>3. Ma méthode de veille</h2>
         <ul>
-            <li><b>Définir le périmètre :</b> thèmes à suivre, objectifs (projet, apprentissage…).</li>
-            <li><b>Identifier les sources fiables :</b> sites spécialisés, blogs techniques, documentations officielles, conférences…</li>
-            <li><b>Mettre en place des outils :</b> flux RSS, newsletters, alertes Google, réseaux sociaux professionnels.</li>
-            <li><b>Trier et analyser :</b> vérifier la crédibilité, résumer, comparer les informations importantes.</li>
-            <li><b>Archiver et partager :</b> drive, wiki, notes, comptes rendus.</li>
-            <li><b>Actualiser régulièrement :</b> suivre les nouveautés chaque semaine.</li>
+            <li><b>Définir le périmètre :</b> les processeurs, de leur conception à leur fabrication, et l’évolution du marché.</li>
+            <li><b>Identifier les sources fiables :</b> instituts d’analyse du marché (Counterpoint, TrendForce, IDC, TechInsights), presse spécialisée (Bits&amp;Chips, Tom’s Hardware, Macworld, MacRumors), documentations des fabricants.</li>
+            <li><b>Mettre en place des outils :</b> <span class="todo">à compléter (flux RSS, newsletters, alertes Google…)</span></li>
+            <li><b>Trier et analyser :</b> croiser plusieurs sources, vérifier les dates et distinguer les faits des rumeurs.</li>
+            <li><b>Archiver et partager :</b> cette page, avec les sources datées en bas.</li>
+            <li><b>Actualiser régulièrement :</b> suivre les annonces chaque semaine (dernière mise à jour : 1<sup>er</sup> novembre 2026).</li>
         </ul>
     </section>
 
     <section class="carte">
-        <h2>4. Mon sujet de veille : les bases de la cybersécurité</h2>
+        <h2>4. Mon sujet de veille : conception, gravure et marché des processeurs</h2>
         <p>
-            Pour ma veille technologique, j’ai choisi le thème de la cybersécurité. C’est un domaine essentiel dans le
-            monde informatique, car les attaques, les failles et les méthodes de protection évoluent très rapidement.
-            Comprendre les bases de la cybersécurité est important pour n’importe quel technicien ou développeur.
+            J’ai choisi de suivre la fabrication des processeurs. Mes questions de départ : comment une puce est
+            conçue puis gravée, pourquoi les puces sont de plus en plus fines, comment le marché évolue, et comment
+            les puces qui ne sont pas parfaites sont réutilisées, notamment par Apple.
+        </p>
+
+        <h3>4.1 De la conception à la puce</h3>
+        <ul>
+            <li><b>Conception :</b> des entreprises dites « fabless » (Apple, Nvidia, AMD, Qualcomm) dessinent leurs puces avec des logiciels spécialisés, sans posséder d’usine.</li>
+            <li><b>Fabrication :</b> une fonderie (TSMC, Samsung, Intel Foundry) grave ces dessins sur des galettes de silicium appelées <i>wafers</i>, grâce à des masques et à la lithographie.</li>
+            <li><b>Test et tri :</b> chaque puce est testée, puis classée selon ce qu’elle sait faire (c’est le « binning », voir 4.6).</li>
+            <li><b>Assemblage :</b> les puces sont découpées, assemblées (packaging) puis intégrées aux produits.</li>
+        </ul>
+
+        <h3>4.2 La gravure : la lithographie EUV</h3>
+        <p>
+            Pour graver des motifs aussi petits, les fonderies utilisent la lithographie par ultraviolets extrêmes (EUV).
+            Une seule entreprise, l’européenne ASML, fabrique ces machines<sup><a href="#s5">[5]</a></sup>. La nouvelle génération,
+            appelée <b>High-NA EUV</b>, coûte environ 400 millions de dollars la machine, soit environ le double de la génération
+            précédente<sup><a href="#s5">[5]</a></sup>. Elle permet de graver des détails plus petits, mais son prix pèse lourd sur le coût des puces.
         </p>
         <p>
-            Grâce à cette veille, je surveille principalement :
-            les nouvelles failles de sécurité, les mises à jour critiques,
-            les nouveaux outils de protection et les attaques importantes qui touchent les entreprises.
-            Je m'intéresse aussi aux bonnes pratiques pour sécuriser un poste ou un réseau.
+            Les fonderies n’adoptent pas cette machine au même rythme. Intel a été la plus rapide et l’utilise pour son futur
+            procédé 14A, prévu en production de masse en 2028. TSMC a longtemps jugé la machine trop chère, mais s’est engagé en
+            septembre 2026 à l’utiliser en production de masse à partir de 2030<sup><a href="#s3">[3]</a></sup>.
+        </p>
+
+        <h3>4.3 Pourquoi les puces sont de plus en plus fines</h3>
+        <p>
+            Graver plus fin permet d’y placer plus de transistors sur la même surface, pour aller plus vite ou
+            consommer moins. Par exemple, TSMC annonce pour son procédé 2 nm un gain d’environ 15 % de performance à
+            consommation égale par rapport à la génération précédente<sup><a href="#s6">[6]</a></sup>. Les « nm » (nanomètres) ne
+            correspondent plus à une taille réelle mesurable : c’est surtout un nom commercial pour désigner une génération.
         </p>
         <p>
-            Pour rester informé, j’utilise plusieurs sources comme
-            <b>LeMondeInformatique</b>, <b>CERT-FR</b>, <b>ZDNet</b>, ainsi que des vidéos YouTube et des comptes spécialisés
-            sur Twitter/X. Cela me permet d’avoir des explications simples et rapides à comprendre sur les risques actuels.
+            Le passage au 2 nm marque aussi un changement de forme des transistors : on abandonne les transistors
+            « FinFET » pour des transistors « nanosheets » à grille enveloppante (GAA)<sup><a href="#s6">[6]</a></sup>.
+            En contrepartie, le prix explose : une galette gravée en 2 nm est facturée environ 30 000 dollars<sup><a href="#s5">[5]</a></sup>.
         </p>
+
+        <h3>4.4 Où en sont les fabricants en 2026 ?</h3>
+        <div class="defile">
+            <table class="journal">
+                <thead>
+                    <tr><th>Fabricant</th><th>Procédé</th><th>Situation</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>TSMC (Taïwan)</td>
+                        <td>N2 (2 nm), transistors nanosheets</td>
+                        <td>Production de masse lancée au quatrième trimestre 2025 dans ses usines Fab 20 et Fab 22<sup><a href="#s6">[6]</a></sup>. Apple a présenté en août 2026 la puce M6, sa première puce en 2 nm<sup><a href="#s11">[11]</a></sup>.</td>
+                    </tr>
+                    <tr>
+                        <td>Intel (États-Unis)</td>
+                        <td>18A, transistors RibbonFET et alimentation par l’arrière (PowerVia)</td>
+                        <td>Premier produit : les processeurs Panther Lake (Core Ultra série 3), fabriqués à Fab 52 en Arizona et présentés au CES 2026<sup><a href="#s7">[7]</a><a href="#s15">[15]</a></sup>.</td>
+                    </tr>
+                    <tr>
+                        <td>Samsung (Corée du Sud)</td>
+                        <td>SF2 (2 nm)</td>
+                        <td>Première puce, l’Exynos 2600, début 2026<sup><a href="#s12">[12]</a></sup>. L’amélioration du rendement reste son objectif principal<sup><a href="#s1">[1]</a></sup>.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>4.5 L’évolution du marché</h3>
+        <ul>
+            <li>TSMC a capté 73 % du marché des fonderies « pures » aux deux premiers trimestres 2026, porté par le 2 nm, le 3 nm et les capacités d’assemblage avancé<sup><a href="#s1">[1]</a></sup>.</li>
+            <li>Samsung reste loin derrière, autour de 6 % (5,9 % au deuxième trimestre 2026), et le chinois SMIC le talonne avec 5,4 %<sup><a href="#s2">[2]</a></sup>.</li>
+            <li>Le marché global croît fortement grâce à l’intelligence artificielle : IDC prévoit plus de 360 milliards de dollars en 2026, soit +17 %<sup><a href="#s14">[14]</a></sup>.</li>
+        </ul>
+        <p class="cle">
+            À retenir : les chiffres varient selon la méthode de calcul. Par exemple, la part de TSMC tombe à environ
+            34 % si l’on compte aussi les usines internes des grands industriels<sup><a href="#s13">[13]</a></sup>. Il faut donc toujours préciser quelle source on cite.
+        </p>
+        <p>
+            Cette concentration pose aussi un risque : une grande partie des puces les plus avancées dépend d’une seule
+            entreprise et d’un seul pays, ce qui rend les approvisionnements fragiles.
+        </p>
+
+        <h3>4.6 Les puces imparfaites : le « binning » chez Apple</h3>
+        <p>
+            Lors de la fabrication, certaines puces ont un défaut. Au lieu de les jeter, le fabricant peut désactiver la partie
+            défectueuse (par exemple un cœur graphique) et vendre la puce comme une version moins puissante. C’est le
+            <b>binning</b> : cela permet d’obtenir plus de puces utilisables par wafer et de réduire le coût<sup><a href="#s8">[8]</a></sup>.
+        </p>
+        <div class="defile">
+            <table class="journal">
+                <thead>
+                    <tr><th>Produit</th><th>Puce utilisée</th><th>Ce qui est désactivé</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>MacBook Air d’entrée (2020)</td><td>M1</td><td>7 cœurs GPU au lieu de 8<sup><a href="#s8">[8]</a></sup></td></tr>
+                    <tr><td>iPhone 17e</td><td>A19</td><td>1 cœur GPU de moins, soit environ 20 % de performance graphique en moins<sup><a href="#s8">[8]</a></sup></td></tr>
+                    <tr><td>MacBook Air d’entrée (2026)</td><td>M5</td><td>8 cœurs GPU au lieu de 10<sup><a href="#s9">[9]</a></sup></td></tr>
+                    <tr><td>iPhone Air</td><td>A19 Pro</td><td>1 cœur GPU sur 6<sup><a href="#s9">[9]</a></sup></td></tr>
+                    <tr><td>MacBook Neo</td><td>A18 Pro</td><td>5 cœurs GPU, un de moins que la version d’iPhone<sup><a href="#s10">[10]</a></sup></td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p>
+            Selon une analyse du Wall Street Journal, depuis 2021 Apple a sorti six puces de la série A avec un cœur graphique
+            désactivé après leur lancement dans les iPhone haut de gamme<sup><a href="#s10">[10]</a></sup>.
+        </p>
+        <p class="cle">
+            Nuance importante : toutes les puces « binnées » ne sont pas défectueuses. Apple désactive aussi parfois des cœurs
+            qui fonctionnent pour séparer ses gammes de produits<sup><a href="#s9">[9]</a></sup>. Intel et AMD font la même chose depuis longtemps
+            (les gammes i3, i5, i7 et i9 viennent en partie de ce tri).
+        </p>
+
+        <h3>4.7 Mon analyse</h3>
+        <ul>
+            <li>Connaître la génération et la finesse d’un processeur aide à choisir un serveur : consommation, chaleur à évacuer, nombre de cœurs disponibles pour la virtualisation.</li>
+            <li>Le coût de fabrication de plus en plus élevé explique en partie la hausse du prix du matériel.</li>
+            <li>La dépendance à quelques fonderies est un risque d’approvisionnement à prendre en compte dans un projet d’infrastructure.</li>
+            <li><span class="todo">à compléter avec ton avis personnel et un lien avec ton projet Proxmox</span></li>
+        </ul>
     </section>
 
     <section class="carte">
-        <h2>5. Les bases de la cybersécurité</h2>
-        <ul>
-            <li><b>Les failles de sécurité :</b> erreurs dans les logiciels qui peuvent être exploitées par des pirates.</li>
-            <li><b>Les mises à jour :</b> essentielles pour corriger les failles et éviter les attaques.</li>
-            <li><b>Les attaques courantes :</b> phishing, ransomware, malware, vol de données.</li>
-            <li><b>La protection du poste :</b> antivirus, firewall, mots de passe forts, double authentification.</li>
-            <li><b>La sauvegarde :</b> indispensable pour récupérer les données en cas d’attaque.</li>
-            <li><b>La vigilance humaine :</b> ne pas cliquer sur des liens suspects, vérifier les emails, etc.</li>
-        </ul>
+        <h2>5. Sources consultées (le 1<sup>er</sup> novembre 2026)</h2>
+        <ol class="sources">
+            <li id="s1">Counterpoint Research, <i>Global Semiconductor Foundry Market Share</i> (août 2026) : <a href="https://counterpointresearch.com/insights/global-semiconductor-foundry-market-share/" target="_blank" rel="noopener">counterpointresearch.com</a></li>
+            <li id="s2">TrendForce, <i>Global Foundry Revenue 2Q26</i> (9 septembre 2026) : <a href="https://www.trendforce.com/presscenter/news/20260909-13225.html" target="_blank" rel="noopener">trendforce.com</a></li>
+            <li id="s3">Bits&amp;Chips, <i>TSMC embraces high-NA EUV</i> (8 septembre 2026) : <a href="https://bits-chips.com/?p=233416" target="_blank" rel="noopener">bits-chips.com</a></li>
+            <li id="s4">TrendForce News, <i>ASML expects first High-NA EUV products</i> (20 mai 2026) : <a href="https://www.trendforce.com/news/2026/05/20/news-asml-expects-first-high-na-euv-memory-logic-products-within-months-amid-tsmcs-cost-driven-delay/" target="_blank" rel="noopener">trendforce.com</a></li>
+            <li id="s5">Tech Wire Asia, <i>ASML’s High-NA EUV tools are production-ready</i> (27 février 2026) : <a href="https://techwireasia.com/2026/02/asml-high-na-euv-ai-chip-production-asia/" target="_blank" rel="noopener">techwireasia.com</a></li>
+            <li id="s6">Gigazine, <i>TSMC quietly begins mass production of 2nm semiconductors</i> (5 janvier 2026, d’après la page officielle de TSMC et Tom’s Hardware) : <a href="https://gigazine.net/gsc_news/en/20260105-tsmc-2nm/" target="_blank" rel="noopener">gigazine.net</a></li>
+            <li id="s7">Maginative, <i>Intel unveils Panther Lake, first Core Ultra on 18A Process</i> (2025) : <a href="https://www.maginative.com/intel-unveils-panther-lake-first-core-ultra-on-18a-process" target="_blank" rel="noopener">maginative.com</a></li>
+            <li id="s8">Macworld, <i>Apple’s chip binning explained</i> (12 avril 2026) : <a href="https://www.macworld.com/article/3107278/apples-chip-binning-explained-what-is-it-and-why-does-it-matter.html" target="_blank" rel="noopener">macworld.com</a></li>
+            <li id="s9">Cult of Mac, <i>How Apple uses faulty silicon to power new devices</i> (2026) : <a href="https://www.cultofmac.com/news/apple-chip-binning" target="_blank" rel="noopener">cultofmac.com</a></li>
+            <li id="s10">VietNamNet, <i>Apple turns flawed iPhone chips into MacBook Neo sales goldmine</i> (2026, d’après le Wall Street Journal) : <a href="https://vietnamnet.vn/en/apple-turns-flawed-iphone-chips-into-macbook-neo-sales-goldmine-2517332.html" target="_blank" rel="noopener">vietnamnet.vn</a></li>
+            <li id="s11">MacRumors, <i>Apple Reveals M6 as First-Ever 2nm Chip</i> (25 août 2026) : <a href="https://macrumors.com/guide/2nm/" target="_blank" rel="noopener">macrumors.com</a></li>
+            <li id="s12">TechInsights, <i>McClean Report May 2026: Foundry Market Overview</i> (8 juin 2026) : <a href="https://www.techinsights.com/ja/node/61785" target="_blank" rel="noopener">techinsights.com</a></li>
+            <li id="s13">Yole Group, <i>Three misconceptions about the $402B semiconductor foundry industry</i> (2026) : <a href="https://www.yolegroup.com/strategy-insights/three-misconceptions-about-the-402b-semiconductor-foundry-industry/" target="_blank" rel="noopener">yolegroup.com</a></li>
+            <li id="s14">EE Times Asia, <i>Foundry 2.0 Market Projected to Grow 17% in 2026</i> (19 avril 2026, prévision IDC) : <a href="https://www.pulse.bot/semiconductors/news/foundry-20-market-projected-to-grow-17-in-2026-amid-ai-compute-boom-b39471b1-ef6a-493d-b029-f124e74ce070/" target="_blank" rel="noopener">pulse.bot</a></li>
+            <li id="s15">Digitimes, <i>CES 2026 : Intel’s 18A Panther Lake</i> (6 janvier 2026) : <a href="https://www.digitimes.com/news/a20260106PD236.html" target="_blank" rel="noopener">digitimes.com</a></li>
+        </ol>
     </section>
 </main>
 
